@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img2"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATION PAGE"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIRST NAME:"
+            android:textColor="#0E0D0D"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit"
+            android:padding="20dp"
+            android:importantForAutofill="yes"
+            android:layout_marginTop="0dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST NAME:"
+            android:textColor="#050505"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:layout_marginTop="2dp"
+            />
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:importantForAutofill="yes"
+            android:minHeight="48dp"
+            android:background="@drawable/edit"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:hint="@string/last_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE OF BIRTH:"
+            android:textColor="#020202"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:layout_marginTop="2dp"
+            />
+        <EditText
+            android:id="@+id/editTextDOB"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="@string/date_of_birth"
+            android:inputType="textPersonName"
+            android:importantForAutofill="yes"
+            android:background="@drawable/edit"
+            android:padding="20dp"
+            android:layout_marginTop="0dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL:"
+            android:textColor="#0B0A0A"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:layout_marginTop="2dp"
+            />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="yes"
+            android:background="@drawable/edit"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD:"
+            android:textColor="#070707"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"
+            android:layout_marginTop="2dp"
+            />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="@string/password"
+            android:background="@drawable/edit"
+            android:padding="20dp"
+            android:layout_marginTop="0dp"
+            android:inputType="textPassword"
+            android:importantForAutofill="yes"
+            android:minHeight="48dp"/>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="@string/register"
+            android:textSize="20dp"
+            android:onClick="onRegisterClick"/>
+    </LinearLayout>
+</ScrollView>
